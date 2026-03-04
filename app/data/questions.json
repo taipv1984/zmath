@@ -1,0 +1,177 @@
+[
+    {
+        "id": 1,
+        "parent_id": 0,
+        "content": "<p>Dien vao cho trong</p><p><b>sub question 1.1</b>:</p><p>123 = 100 + {#1} + {#2}</p><b>sub question 1.2</b>:</br>456 = 400 + {#3} + {#4}",
+        "image_path": "https://placehold.co/800x300",
+        "childs": [],
+        "question_type": "single",
+        "answers": [
+            {
+                "order": 1,
+                "value": "20",
+                "value_option": "",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "20"
+            },
+            {
+                "order": 2,
+                "value": "3",
+                "value_option": "",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "20"
+            },
+            {
+                "order": 3,
+                "value": "50",
+                "value_option": "[50, 60, 70]",
+                "value_format": "number",
+                "input_type": "select",
+                "input_width": "20"
+            },
+            {
+                "order": 4,
+                "value": "6",
+                "value_option": "[5, 6, 7]",
+                "value_format": "number",
+                "input_type": "select",
+                "input_width": "20"
+            }
+        ],
+        "order": 0
+    },
+    {
+        "id": 2,
+        "parent_id": 0,
+        "content": "<p><b>question 2</b>:</p>sau so 2 la: {#1}",
+        "image_path": "https://static1.matific.com/v1/215x120/NumberComparisonIntroducingSignsUpTo10.png",
+        "childs": [],
+        "question_type": "multi",
+        "answers": [
+            {
+                "order": 1,
+                "value": "[3, \"ba\", \"three\"]",
+                "value_option": "",
+                "value_format": "array",
+                "input_type": "text",
+                "input_width": "40"
+            }
+        ],
+        "order": 0
+    },
+    {
+        "id": 3,
+        "parent_id": 0,
+        "content": "tinh tong va hieu cua cac phep tinh sau:</br>tong: {#1} + {#2} = 500</br>hieu: {#3} - {#4} = 100",
+        "image_path": "https://vietop.edu.vn/wp-content/uploads/2026/02/banner-li-xi-tet-200k.webp",
+        "childs": [],
+        "question_type": "swap",
+        "extra": "{\"swap_group\":[1,2]}",
+        "answers": [
+            {
+                "order": 1,
+                "value": "200",
+                "value_option": "[200, 300]",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "30"
+            },
+            {
+                "order": 2,
+                "value": "300",
+                "value_option": "[200, 300]",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "30"
+            },
+            {
+                "order": 3,
+                "value": "500",
+                "value_option": "",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "30"
+            },
+            {
+                "order": 4,
+                "value": "400",
+                "value_option": "",
+                "value_format": "number",
+                "input_type": "text",
+                "input_width": "30"
+            }
+        ],
+        "order": 0
+    },
+    {
+        "id": 4,
+        "parent_id": 0,
+        "content": "<p><b>question 4</b>:</p>question parent for quiz header",
+        "question_type": "quiz",
+        "childs": [
+            {
+                "id": 41,
+                "parent_id": 4,
+                "content": "quiz question 4.1",
+                "order": 1
+            },
+            {
+                "id": 42,
+                "parent_id": 4,
+                "content": "quiz question 4.2",
+                "order": 2
+            }
+        ],
+        "extra": "{\"quiz_value\":2}",
+        "order": 0
+    },
+    {
+        "id": 5,
+        "parent_id": 0,
+        "content": "<p><b>question 3</b>:</p>question parent for step header",
+        "image_path": "assets/images/math_4/image_2.png",
+        "question_type": "step",
+        "extra": "{\"step_view\":\"append\"}",
+        "childs": [
+            {
+                "id": 51,
+                "parent_id": 5,
+                "content": "<p><b>step question 5.1</b>:</p>100 + 100 = {#1}",
+                "question_type": "single",
+                "answers": [
+                    {
+                        "order": 1,
+                        "value": "200",
+                        "value_option": "",
+                        "value_format": "number",
+                        "input_type": "text",
+                        "input_width": "10"
+                    }
+                ],
+                "order": 1
+            },
+            {
+                "id": 52,
+                "parent_id": 5,
+                "content": "<p><b>step question 5.2</b>:</p>300 + 300 = {#1}",
+                "question_type": "single",
+                "answers": [
+                    {
+                        "order": 1,
+                        "value": "600",
+                        "value_option": "",
+                        "value_format": "number",
+                        "input_type": "text",
+                        "input_width": "30"
+                    }
+                ],
+                "order": 2
+            }
+        ],
+        "answers": [],
+        "summary": "ok summary ok",
+        "order": 0
+    }
+]
