@@ -1,19 +1,29 @@
+import HomeChatgptScreen from "@/app/screens/HomeChatgptScreen";
+import HomeGeminiScreen from "@/app/screens/HomeGeminiScreen";
 import { useRouter } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+
+import { StyleSheet } from "react-native";
 
 export default function Index() {
     const router = useRouter();
 
     return (
-        <View style={styles.container}>
-            <Text style={styles.title}>Math Exercise</Text>
-            <Pressable
-                style={styles.btn}
-                onPress={() => router.push("/math-exercise")}
-            >
-                <Text style={styles.btnText}>Bắt đầu làm bài</Text>
-            </Pressable>
-        </View>
+        // <View style={styles.container}>
+        //     <Text style={styles.title}>Math Exercise</Text>
+        //     <Pressable
+        //         style={styles.btn}
+        //         onPress={() => router.push("/math-exercise")}
+        //     >
+        //         <Text style={styles.btnText}>Bắt đầu làm bài</Text>
+        //     </Pressable>
+        // </View>
+
+        <>
+            {/* <HomeCopilotScreen /> */}
+            <HomeGeminiScreen />
+            {/* <HomeChatgptScreen /> */}
+            {/* <HomeDemoScreen /> */}
+        </>
     );
 }
 
