@@ -3,7 +3,7 @@ import React from "react";
 import { Text, View } from "react-native";
 
 export const Header = () => (
-    <View className="flex-row items-center justify-between px-5 pt-4 pb-2">
+    <View className="bg-blue-600 flex-row items-center justify-between px-5 py-4 pb-2">
         <View className="flex-row items-center">
             <View className="bg-white p-1 rounded-lg mr-3 shadow-lg">
                 <Ionicons name="warning" size={32} color="#f44336" />

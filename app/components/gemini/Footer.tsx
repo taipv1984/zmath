@@ -3,7 +3,7 @@ import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 
 const Footer = () => (
-    <View className="absolute bottom-0 w-full bg-[#1a2130] border-t border-gray-800 flex-row justify-around py-3">
+    <View className="bottom-0 w-full bg-[#1a2130] border-t border-gray-800 flex-row justify-around py-3">
         <TouchableOpacity className="items-center">
             <Ionicons name="home" size={24} color="white" />
             <Text className="text-white text-xs mt-1">Home</Text>
